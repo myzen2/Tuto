@@ -1,0 +1,104 @@
+// Place all the styles related to the page controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.home{
+  background: url(Computer_and_Coffee.jpg) no-repeat fixed center;
+  margin: 0;
+  padding: 0;
+  color: #f5f5f5;
+  font-weight: bold;
+  background-size: cover;
+}
+
+.brand{
+  padding: 50px;
+  font-size: 3em;
+  color: #f5f5f5;
+  font-weight: bold;
+}
+
+.title{
+
+  font-size: 5em;
+}
+.welcome{
+  margin-left: 20%;
+  height: 300px;
+  border: solid red 5px;
+  font-size: 2em;
+  padding: 50px;
+}
+.intro{
+
+  margin: 50px;
+}
+
+.button{
+  text-decoration: none;
+  color: #f5f5f5;
+  background-color: #0073e5;
+  margin: 50px;
+  padding: 12px 25px;
+  border: 4px solid #f5f5f5;
+  display: inline;
+  width: 250px;
+  -webkit-transition-duration: 0.5s; /* Safari */
+  transition-duration: 0.5s;
+}
+
+.button:hover {
+  background-color: #f5f5f5; /* White */
+  color: #0073e5;
+  border: 4px solid #0073e5;
+}
+
+.diag{
+  /*height: 200px;*/
+  color: #444444;
+  font-weight: bold;
+  display: block;
+  width: 80%;
+/*  margin-left: -50%;*/
+  /*border-right: 1920px solid transparent;*/
+  border-bottom: 500px solid #4c4c4c;
+  margin-bottom: 50px;
+z-index: -1;
+  transform: rotate(25deg);
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+
+  border-bottom: 5px solid black;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-top: 20px solid #f00;
+}
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+
+  border-left: 60px solid green;
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+
+  border-right:10px solid blue;
+}

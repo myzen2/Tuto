@@ -1,0 +1,26 @@
+</div>
+<main>
+  <section class="leading">
+    <p class="leading-bigtext">Hello</p>
+    <p class="leading-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae semper quam. Praesent lobortis tellus quis erat condimentum, a bibendum tortor volutpat.</p>
+  </section>
+</main>
+
+<div class="container">
+  <section class="cards">
+    <% @posts.each do |post| %>
+    <article class="post">
+      <h1><%= post.title %></h1>
+      <% if post.image_url.attached? %>
+      <%= image_tag(post.image_url, class: "image") %>
+      <% else %>
+      No image
+      <% end %>
+      <p class="description">
+        <%= post.description.truncate(45)  %>
+      </p>
+      <%= button_to 'Voir la suite', post_path(post.id), method: :get,
+      class: 'btn link' %>
+    </article>
+    <% end %>
+  </div>

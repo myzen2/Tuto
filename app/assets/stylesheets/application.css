@@ -1,0 +1,172 @@
+/*
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+* vendor/assets/stylesheets directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+* files in this directory. Styles in this file should be added after the last require_* statement.
+* It is generally better to create a new file per style scope.
+*
+*= require_tree .
+*= require_self
+*/
+/** Color
+* #0073e5 	(0,115,229) Blue
+*	#7ddc1f 	(125,220,31) Green
+*	#f5f5f5 	(245,245,245) White
+*	#444444 	(68,68,68) Grey
+*	#000000 	(0,0,0) Black
+*
+*
+*/
+@font-face {
+  font-family:'solution';
+  src: url('/asset/fonts/solution.otf');
+  src: url('/asset/fonts/solution.otf?#iefix') format('embedded-opentype'),
+}
+@font-face {
+  font-family: 'solution';
+  src: url(/assets/solution.otf);
+  src: url(/assets/solution.otf?#iefix) format("embedded-opentype"),
+  url(/assets/solution.ttf) format("truetype"),
+  url(/assets/solution.woff) format("woff"),
+  url(/assets/solution.svg#icofonts) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family:'solution';
+
+}
+
+.container{
+  max-width: 80%;
+  margin: auto;
+}
+
+ol {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+  cursor: pointer;
+}
+
+h1{
+  margin: 50px 0px;
+  text-align: center;
+  font-size: 3em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 5px;
+}
+th{
+  font-size: 18px;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #E6E6FA;
+}
+.actions{
+  width: 140px;
+}
+a {
+  color: white;
+}
+
+.btn{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.btn:hover{
+  background-color: #000000;
+  color: red;
+  cursor: pointer;
+
+}
+
+.btn_edit{
+  background-color: #008CBA; /* Blue */
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn_delete{
+  background-color: #f44336; /* Red */
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.image{
+  max-height: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.headband{
+  height: 200px;
+  background-color: yellow;
+  overflow:hidden;
+}
+
+.picture{
+  display: block;
+  width: 100%;
+}
+
+footer{
+
+  background-color: #000;
+  color: #f5f5f5;
+  font-size: 12px;
+  height: 100px;
+  width: 100%;
+  bottom: 0;
+}

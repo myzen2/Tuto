@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+</div>
+<div class="headband">
+  <%= image_tag @post.image_url, class: 'picture' %>
+
+</div>
+<div class="container">
+<h1>
+  <strong>Titre :</strong>
+  <%= @post.title %>
+
+</h1>
+<% if @post.image_url.attached? %>
+<!-- @post.image.present? will always return true, use attached? to check presence -->
+<p>
+  <%= image_tag @post.image_url, width: '100%' %>
+</p>
+<% end %>
+
+<p>
+  <strong>Description:</strong>
+  <%= @post.description %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @post.category.name %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_post_path(@post), class: 'btn_edit' %> |
+<%= link_to 'Back', posts_path, class: 'btn_edit' %>
